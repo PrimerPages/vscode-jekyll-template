@@ -17,7 +17,7 @@ jobs:
       changelog: ${{ steps.release-draft.outputs.body }}
     steps:
       - name: Checkout main branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Run Release Drafter
         id: release-draft
@@ -36,7 +36,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout main branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Bump version
         run: |
